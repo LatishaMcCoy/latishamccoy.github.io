@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Roboto:wght@100&display=swap');
+
+body {
+	font-family: 'IBM Plex Sans Thai Looped', serif;
+  margin-top: -30px;
+}
+
+header{
+  margin-bottom: 30px;
+  background-color: #ffb0b5;
+
+}
+
+header h1 {
+    padding-top: 35px;
+    padding-bottom: 40px;
+    display: flex;
+    font-weight: lighter;
+    font-style: italic;
+    color: white;
+    font-size: 55px;
+    justify-content: center;
+    animation: fadeInAnimation ease 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+     }
+}
+
+
+.main{
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+}
+
+p{
+  text-align: center;
+  color: #ffb0b5;
+  font-size: 18px;
+}
+
+.description {
+  color: white;
+  font-weight: bold;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  max-width: 350px;
+  position: relative;
+}
+
+
+
+.col{
+  margin-top: 100px;
+  padding: 10px;
+
+ max-width: auto;
+ overflow: auto;
+ height: 400px;
+ width: 400px;
+ background-color: #fda97e;
+ border-radius: 50%;
+ display: none;
+
+
+}
+
+.me{
+  padding-top: 40px;
+}
+img {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 400px;
+  width: 450px;
+}
+
+img:hover{
+  transform: translateY(-50px);
+  transition: all ease-in-out 300ms;
+  cursor: pointer;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2),
+   0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+footer{
+  text-align: center;
+  font-size: 12px;
+}
