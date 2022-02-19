@@ -41,7 +41,7 @@
         I hope to learn a lot during this class!</p>
       </div>
       <div id="icon" class="me">
-      <img src="me1.png"
+      <img src="https://github.com/LatishaMcCoy/latishamccoy.github.io/blob/main/me1.PNG"
        alt="lati" / onclick="showDiv()">
        <p class="clickfor" onclick="myFunction()">Click to learn more about me!</p>
      </div>
