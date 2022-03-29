@@ -68,7 +68,7 @@
 
 <div id="Projects" class="tabcontent">
   <h3>Projects</h3>
-  <p>Content coming soon!</p>
+  <p><a href="../week06/anime_test.html" class="mylinks">Midterm</a></p>
 </div>
 
   <footer>
