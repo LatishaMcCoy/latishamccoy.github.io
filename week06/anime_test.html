@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Zone</title>
+    <link rel="stylesheet" href="animeStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+        <h1>StrawHat<strong>Pets</strong></h1>
+        <h4>Random Pet Name Generator</h4>
+    </div>
+  </header>
+
+
+
+  <!---random name generator--->
+
+<div class="results">
+  <div id="jolly" class="jolly-img"><img src="img/jolly.png" alt="jolly roger"></div>
+
+  <div id="random-name"></div>
+</div>
+
+<!--tabs for anime content--->
+<button id="anime_btn">View More!</button>
+
+<div class="tab">
+<div >
+  <button class="tablinks" onclick="openTab(event, 'about')">Info</button>
+  <button class="tablinks" onclick="openTab(event, 'character')">Main Characters</button>
+  <button class="tablinks" onclick="openTab(event, 'trailer')">Trailer</button>
+</div>
+
+<!--tab content--->
+
+<div id="about" class="tabcontent"></div>
+<div id="character" class="tabcontent" style="display: flex;"></div>
+<div id="trailer" class="tabcontent"></div>
+
+</div>
+
+
+<script src="script.js"></script>
+<script>
+  $(document).ready(function(){
+         $('#anime_btn').click(function() {
+           $('.tab').toggle(1000);
+         });
+     });
+
+  function openTab(evt, TabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(TabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+ $("#jolly").click(function(){
+  $("#random-name").show();
+}); 
+
+
+</script>
+</body>
+</html>
