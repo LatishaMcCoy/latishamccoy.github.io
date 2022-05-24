@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Random Idea Generator</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="../colors.css">
+
+<style>
+
+	h2{
+		margin-top: 4px;
+	}
+	#idea-generate-btn{
+		margin: -0.2rem;
+		margin-bottom: 4px;
+  		font-family: 'Fredoka One', cursive;
+  		font-size: 15px;
+  		background-color: rgba(71, 50, 191, 0.8);
+  		color: white;
+  		border-radius: 3px;
+  		padding: 10px;
+  		border-style: none;
+
+	}
+
+	.color-generator-btn p{
+		margin: -0.25rem;
+	}
+
+	#idea-generate-btn:hover{
+		transform: scale(1.2);
+	}
+
+
+	#random-idea{
+		font-size: 18px;
+		border: 2px solid;
+
+		
+		margin: -0.9rem;
+	}
+
+	#submit{
+		padding: 10px;
+		font-size: 12px;
+		background-color: #fb7341;
+		opacity: 0.5;
+	}
+
+	.icon-bar .active{
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px 0 rgba(67, 60, 123, 0.8);
+}
+</style>
+
+
+</head>
+<body>
+	<!--- color palette javascript and html attributed to Tyler Potts https://www.youtube.com/watch?v=y9F-XzrYIrs --->
+	<div id="box">
+		<header> 
+			<h1>
+				Artist Hub
+				<i class="fa fa-paint-brush" id="brush" aria-hidden="true"></i>
+			</h1>
+		</header>
+			
+		<br>
+		<h2>Color Palette Generator</h2>
+		<div class="color-generator-btn">
+			<p>Use the combinations below to create your next masterpiece....
+		or don't, I can't tell you what to do.</p>
+		</div>
+		
+
+		<div id="results">
+			<div id="random-idea"></div>
+
+  			<div>
+
+  				<button id="idea-generate-btn">Picasso</button>
+  			</div>
+  			<br>
+		</div>
+		<br>
+		<br>
+		<div>
+			<p>Help out others with some of your own ideas:</p>
+		</div>
+
+		<form action='../suggestions.php' method="post" >
+			<label for="idea" class="color-generator-btn"> Enter Idea:</label>
+				<input type="text" name="idea" id="idea" class="form" required>
+				<br>
+
+				<input type="submit" name="submit" id="submit" 
+				>
+		</form>
+  		
+
+  			
+
+
+
+
+<!--bottom icon nav-->
+
+		<div class="icon-bar">
+			<a id = "homebutton" href="welcome-after.php"><img src="../images/home.png"></a>
+  			<a href="image.html"><img src="../images/image.png"></i></a>
+  			<a href="idea.html" class="active"><img src="../images/thought.png"></a>
+  			<a href="color.html"><img src="../images/color_wheel.png"></a>
+		
+		</div>
+
+    	<div id="overlay"></div>
+
+</div>
+<script src="../scripts/ideas.js"></script>
+
+</body>
+
+</html>

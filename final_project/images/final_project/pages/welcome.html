@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Artist Hub </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+
+
+</head>
+<body>
+	
+	<div id="box">
+		<header> 
+			<h1>
+				Artist Hub
+				<i class="fa fa-paint-brush" id="brush" aria-hidden="true"></i>
+			</h1>
+		</header>
+			
+		<br>
+
+
+		<div>
+			<h2 class="intro">Hark! Who goes there?</h2>
+			<form>
+				<label for="Name"> Name:</label>
+				<input type="text" name="name" id="name" class="form" required>
+
+				<br>
+				<br>
+
+				<label for="Artist Type">What Is Your Medium?</label>
+				<input type="text" name="artist" class="form" id="artist" required onkeyup="showHint(this.value)" >
+
+				<br>
+				<br>
+
+				<input type="submit" name="submit" id="submit" >
+
+				<p class="textHint">Suggestions: <span id="txtHint"></span></p>
+
+
+			</form>
+		</div>
+
+
+		<div class="icon-bar">
+			<a class="active" id = "homebutton" href="welcome.html"><img src="../images/home.png"></a>
+  			<a href="image.html"><img src="../images/image.png"></i></a>
+  			<a href="#"><img src="../images/thought.png"></a>
+  			<a href="color.html"><img src="../images/color_wheel.png"></a>
+		
+		</div>
+
+	</div>
+    <div id="overlay"></div>
+
+</body>
+
+</html>

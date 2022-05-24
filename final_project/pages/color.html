@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Color Palette Generator</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="../colors.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+	.icon-bar .active{
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px 0 rgba(67, 60, 123, 0.8);
+}
+</style>
+
+
+</head>
+<body>
+	<!--- color palette javascript and html attributed to Tyler Potts https://www.youtube.com/watch?v=y9F-XzrYIrs --->
+	<div id="box">
+		<header> 
+			<h1>
+				Artist Hub
+				<i class="fa fa-paint-brush" id="brush" aria-hidden="true"></i>
+			</h1>
+		</header>
+			
+		<br>
+
+		<main>
+			<h2>Color Palette Generator</h2>
+			<p>
+				Click [<button class="color-generator-btn"> Space</button>] to generate a new palette.
+			</p>
+
+
+
+			<!--colour box 1-->
+
+			<div class="colours">
+				<div class="colour">
+					<button class="lock-toggle">
+						<img src="../images/lock-open.svg">
+					</button>
+
+					<input type="text" class="colour-input" value="#000000">
+
+					<button class="copy-hex">Copy</button>
+				</div>
+			</div>
+
+			<!--colour box 2-->
+
+			<div class="colours">
+				<div class="colour">
+					<button class="lock-toggle">
+						<img src="../images/lock-open.svg">
+					</button>
+
+					<input type="text" class="colour-input" value="#000000">
+
+					<button class="copy-hex">Copy</button>
+				</div>
+			</div>
+
+			<!--colour box 3-->
+
+			<div class="colours">
+				<div class="colour">
+					<button class="lock-toggle">
+						<img src="../images/lock-open.svg">
+					</button>
+
+					<input type="text" class="colour-input" value="#000000">
+
+					<button class="copy-hex">Copy</button>
+				</div>
+			</div>
+
+			<!--colour box 4-->
+
+			<div class="colours">
+				<div class="colour">
+					<button class="lock-toggle">
+						<img src="../images/lock-open.svg">
+					</button>
+
+					<input type="text" class="colour-input" value="#000000">
+
+					<button class="copy-hex">Copy</button>
+				</div>
+			</div>
+
+			<div><i class="fa fa-arrow-right" id="arrow"></i></div>
+		</main>
+
+
+<!--bottom icon nav-->
+
+		<div class="icon-bar">
+			<a id = "homebutton" href="welcome-after.php"><img src="../images/home.png"></a>
+  			<a href="image.html"><img src="../images/image.png"></i></a>
+  			<a href="idea.html"><img src="../images/thought.png"></a>
+  			<a href="color.html" class="active"><img src="../images/color_wheel.png"></a>
+		
+		</div>
+
+    	<div id="overlay"></div>
+
+</div>
+
+	<div class="tips" id="tips">
+		<p>Color theory may not always seem concrete. Use colors to your discretion.</p>
+
+		<br>
+		<p>When choosing colors, a good rule of thumb is choosing a dark color first then base all colors around it.</p>
+
+
+	</div>
+
+
+<script type="text/javascript" src="../scripts/color_script.js" ></script>
+<script>
+  $(document).ready(function(){
+  			$('.tips').hide();
+         $('.arrow').click(function() {
+           $('.tips').show(1000);
+
+         });
+     });
+
+      </script>
+
+</body>
+
+</html>

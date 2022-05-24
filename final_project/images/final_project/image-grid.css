@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Puddles&display=swap');
+
+
+:root{
+  --primary: #D81E5D;
+  --secondary: #8A4FFF;
+  --light: #eee;
+  --grey: #a09ca0;;
+  --dark: #1e2f42;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin:  0;
+  padding: 0;
+  font-family: 'Fredoka One', cursive;
+  font-size: 14px;
+  color: #a09ca0;
+}
+
+
+
+.image-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  max-width: 500px;
+}
+
+
+.image-grid-column {
+  flex: 33.33%;
+  padding: 12px;
+}
+
+.image-grid-column img {
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.image-grid-column img:hover {
+  transform: scale(1.5);
+}
+
+h2{
+  color: var(--dark);
+  font-size: 20px;
+
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+p{
+  color: var(--grey);
+  font-size: 14px;
+  margin: 0px;
+}
+
+h4{
+  color: var(--grey);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+p{
+  color: var(--grey);
+  font-size: 14px;
+  margin: 0px;
+}
+
+button, input{
+  appearance:  none;
+  border-style: none;
+  outline: none;
+  background: none;
+}
+
+button{
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-btn{
+  color: var(--primary);
+
+  font-size: inherit;
+  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  -webkit-background-clip:  text;
+  -webkit-text-fill-color:  transparent;
+  transition: 0.4s ease-out;
+
+
+}
+
+.save-btn:hover{
+  padding-left: 0.4rem;
+}
+
+
+.icon-bar{
+  margin-top: 1.6rem;
+}
+

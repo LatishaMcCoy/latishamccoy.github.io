@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Puddles&display=swap');
+
+
+:root{
+	--primary: #D81E5D;
+	--secondary: #8A4FFF;
+	--light: #eee;
+	--grey: #a09ca0;;
+	--dark: #1e2f42;
+
+}
+
+* {
+	box-sizing: border-box;
+	margin:  0;
+	padding: 0;
+	font-family: 'Fredoka One', cursive;
+	font-size: 14px;
+	color: #a09ca0;
+}
+
+main{
+	padding: 2.5rem 2rem;
+	max-width: 400px;
+	margin: 0 auto;
+
+}
+
+#box{
+   font-family: 'Fredoka One', cursive;
+  width: 400px;
+  height: 570px;
+  border-radius: 5px;
+  color: #a09ca0;
+  background-color: ghostwhite;
+  box-shadow: 0 4px 8px 0 rgba(67, 60, 123, 0.6);
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+}
+.icon-bar .active{
+  transform: scale(1.2);
+}
+
+h2{
+	color: var(--dark);
+	font-size: 20px;
+	margin-top: -2rem;
+	margin-bottom: 1.3rem;
+	text-transform: uppercase;
+}
+
+p{
+	color: var(--grey);
+	font-size: 14px;
+	margin: 0px;
+}
+
+button, input{
+	appearance:  none;
+	border-style: none;
+	outline: none;
+	background: none;
+}
+
+button{
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.color-generator-btn{
+	color: var(--primary);
+	font-size: inherit;
+	background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+	-webkit-background-clip:  text;
+	-webkit-text-fill-color:  transparent;
+	transition: 0.4s ease-out;
+	margin-bottom: 1.8rem;
+
+}
+
+.color-generator-btn:hover{
+	padding-left: 0.4rem;
+}
+
+h4{
+	color: var(--grey);
+	margin-bottom: 0.6rem;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.colours{
+	display: inline-grid;
+	padding: 5px ;
+
+
+}
+
+.colour{
+	display: flex;
+	align-items: center;
+	padding: 3px;
+	border-radius: 5px;
+	color: black;
+	background-color: var(--dark);
+	transition: 0.4s ease out;
+	border-style: 2px solid transparent;
+
+
+}
+
+.color.copied{
+	border-color:  darkred;
+}
+
+.lock-toggle{
+	opacity: 0.5;
+	transition: 0.4s;
+
+}
+
+.lock-toggle.is-locked{
+	opacity: 1;
+}
+
+.colour-input{
+	text-align: center;
+	color: var(--light);
+}
+
+#arrow{
+	margin-top: 10px;
+	margin-bottom: -2rem;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}  
+
+
+.tips p{
+	font-size: 12px;
+	color: var(--dark);
+	max-width: 100px;
+	padding-left: 10px;
+	border-style: dashed;
+	border-radius: 5px;
+	
+}

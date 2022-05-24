@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Artist Hub </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+<body>
+	
+	<div id="box">
+		<header> 
+			<h1>
+				Artist Hub
+				<i class="fa fa-paint-brush" id="brush" aria-hidden="true"></i>
+			</h1>
+		</header>
+			
+		<br>
+
+
+		<div>
+			<h2>Hark! Who goes there?</h2>
+			<form action='connection.php' method="post">
+				<label for="Name"> Name:</label>
+				<input type="text" name="name" id="name" class="form" required>
+
+				<br>
+				<br>
+
+				<label for="Artist Type">What Is Your Medium?</label>
+				<input type="text" name="artist" class="form" id="artist" required onkeyup="showHint(this.value)" >
+
+				<br>
+				<br>
+
+				<input type="submit" name="submit" id="submit" 
+				>
+			
+
+				<p>Suggestions: <span id="txtHint"></span></p>
+
+
+			</form>
+		</div>
+
+
+		<div class="icon-bar">
+
+		
+		</div>
+
+	</div>
+    <div id="overlay"></div>
+
+
+<script type="text/javascript" src="scripts/artistSuggestion.js" ></script>
+
+
+</body>
+
+</html>
